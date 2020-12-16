@@ -2,10 +2,12 @@ fun sendMessageToClient(
         client: Client?, message: String?, mailer: Mailer
 ) {
 
-    if (client != null || message != null) {
-        var personalInfo: PersonalInfo? = client?.personalInfo ?: return
-        var email: String = personalInfo?.email ?: return
-        mailer.sendMessage(email, message ?: "")
+    val personalInfo: PersonalInfo? = client?.personalInfo ?: return
+
+    if (message != null) {
+
+        val email: String = personalInfo?.email ?: return
+        mailer.sendMessage(email, message)
     } else {
         return
     }
