@@ -4,15 +4,15 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 76
-    length: 6
+  - offset: 101
+    length: 1
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 76
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: prefix = "[", postfix = "]"
   text: |
     fun joinOptions(options: Collection<String>) =
@@ -34,5 +34,8 @@ files:
 
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 16 Dec 2020 09:41:10 UTC
 record: -1
