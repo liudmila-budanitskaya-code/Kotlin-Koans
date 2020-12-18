@@ -3,8 +3,10 @@ class Invokable {
         private set
 
     operator fun invoke(): Invokable {
-        TODO()
+        numberOfInvocations++
+        return this
     }
+
 }
 
 fun invokeTwice(invokable: Invokable) = invokable()()
