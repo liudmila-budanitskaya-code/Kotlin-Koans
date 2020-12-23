@@ -1,7 +1,13 @@
+import com.sun.xml.internal.ws.policy.spi.AssertionCreationException
+import java.lang.AssertionError
+
 class LazyProperty(val initializer: () -> Int) {
-    /* TODO */
+    var _lazy: Int? = null
     val lazy: Int
         get() {
-            TODO()
+            if (_lazy == null) {
+                _lazy = initializer()
+            }
+            return _lazy!!
         }
 }
