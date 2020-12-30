@@ -4,15 +4,15 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 44
-    length: 6
+  - offset: 40
+    length: 19
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 44
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       f()
           return this
@@ -68,5 +68,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 23 Dec 2020 16:45:00 UTC
 record: -1
