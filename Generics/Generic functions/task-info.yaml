@@ -4,15 +4,15 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 174
-    length: 0
+  - offset: 327
+    length: 2
     placeholder_text: fun partitionTo() = TODO()
     initial_state:
       length: 26
       offset: 20
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       fun <T, C : MutableCollection<T>> Collection<T>.partitionTo(first: C, second: C, predicate: (T) -> Boolean): Pair<C, C> {
           for (element in this) {
@@ -71,5 +71,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 02 Jan 2021 13:41:52 UTC
 record: -1
